@@ -7,6 +7,7 @@
     <string name="tvLevel">Level:</string>
     <string name="tvTimeRemaining">Time Remaining:</string>
     <string name="tvScore">Score:</string>
+    <string name="celebrity_image">Celebrity Image</string>
 
     <string-array name="difficulty">
         <item>Easy</item>

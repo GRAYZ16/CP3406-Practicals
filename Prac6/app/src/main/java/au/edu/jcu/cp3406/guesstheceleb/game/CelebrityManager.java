@@ -1,4 +1,4 @@
-package au.edu.jcu.cp3406.guesstheceleb;
+package au.edu.jcu.cp3406.guesstheceleb.game;
 
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -7,13 +7,13 @@ import android.graphics.BitmapFactory;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class ImageManager
+public class CelebrityManager
 {
     private String assetPath;
     private String[] imageNames;
     private AssetManager assetManager;
 
-    ImageManager(AssetManager assetManager, String assetPath)
+    public CelebrityManager(AssetManager assetManager, String assetPath)
     {
         this.assetManager = assetManager;
         this.assetPath = assetPath;
@@ -29,7 +29,7 @@ public class ImageManager
 
     }
 
-    Bitmap get(int i)
+    public Bitmap get(int i)
     {
         try
         {
@@ -41,5 +41,17 @@ public class ImageManager
             System.out.println("The file does not exist");
             return null;
         }
+    }
+
+    public String getName(int i)
+    {
+        String str = imageNames[i];
+
+        return str.substring(0, str.lastIndexOf('.'));
+    }
+
+    public int count()
+    {
+        return imageNames.length;
     }
 }
