@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FoleyApp</string>
+    <string name="cow">Cow</string>
+    <string name="balloon">Balloon</string>
+    <string name="office">Office</string>
+    <string name="work">Work</string>
+</resources>
